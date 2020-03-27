@@ -12,6 +12,16 @@ The setup here is pretty OS-agnostic - it involves the use of two separate docke
 
 ## Getting Started
 
+### Installation
+Installation and subsequent spin-up of this program is pretty straightforward.
+
+ - Install [Docker](https://www.docker.com/get-started), if you haven't already.
+ - Clone this entire repository, or download the ZIP itself to your machine.
+ - Once downloaded, simply run `./start.sh` from the root of the project.
+ - Congratulations!  The shipping-eligibility API is now up and running, listening on port 3314 on your local machine.
+ 
+ If you should experience any downtime or crashes for whatever reason, simply run `./restart.sh` to get everything back to fully functional again.
+
 ### API Details
 There are 5 APIs total available within this Spring Boot application - one indicates to the end user whether or not a given item is eligible for our new shipping program, and the others allow for various administrative configurations around the guidelines of said program.  The details are as follows:
 
@@ -42,16 +52,6 @@ There are 5 APIs total available within this Spring Boot application - one indic
 - **Description**: Specify sellers (both existing and brand new) that should be removed from eligibility for the new shipping program.
 - **Query Parameters**:
     - `name` (required)
-
-### Installation
-Installation and subsequent spin-up of this program is pretty straightforward.
-
- - Install [Docker](https://www.docker.com/get-started), if you haven't already.
- - Clone this entire repository, or download the ZIP itself to your machine.
- - Once downloaded, simply run `./start.sh` from the root of the project.
- - Congratulations!  The shipping-eligibility API is now up and running, listening on port 3314 on your local machine.
- 
- If you should experience any downtime or crashes for whatever reason, simply run `./restart.sh` to get everything back to fully functional again.
 
 ### Usage
 Instantiation and bootstrapping of this Spring Boot application inherently includes a number of seeders, so that there's some play data to work with starting out.  However, the administrative APIs captured above should allow for easy addition/removal from of the data set available.
