@@ -81,3 +81,6 @@ curl -X DELETE "localhost:3314/admin/categoryApproval?category=1"
 ```
 curl "localhost:3314/item/isValid?title=Television&seller=james&category=1&price=100"
 ```
+
+## Feedback
+As with any API, there's always room for improvement and expansion.  If there's anything you'd like to see in here, do let me know and I'll see what I can do.  Thanks for taking the time to check this out!
